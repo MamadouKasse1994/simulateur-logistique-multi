@@ -13,14 +13,7 @@ from supabase import create_client, Client
 # ---------------------------------------------
 
 # ---------------- CONFIGURATION & PARAMÈTRES GLOBALES ----------------
-from supabase import create_client, Client
-import streamlit as st
 
-# Connexion sécurisée en utilisant les secrets de Streamlit Cloud
-supabase_url = st.secrets["supabase"]["url"]
-supabase_key = st.secrets["supabase"]["key"]
-
-supabase: Client = create_client(supabase_url, supabase_key)
 # --- Constantes de Jeu ---
 BASE_DEMANDS = {"A": 450, "B": 350, "C": 250, "D": 150, "E": 100} 
 SALARY_PER_EMP = 2500 
